@@ -21,10 +21,10 @@ test("gets enemy's health value", () => {
 });
 
 test('gets a description of the enemy', () => {
-  const enemy = new Enemy('Adam', 'nunchucks');
+  const enemy = new Enemy('goblin', 'sword');
 
-  expect(enemy.getDescription()).toEqual(expect.stringContaining('Adam'));
-  expect(enemy.getDescription()).toEqual(expect.stringContaining('nunchucks'));
+  expect(enemy.getDescription()).toEqual(expect.stringContaining('goblin'));
+  expect(enemy.getDescription()).toEqual(expect.stringContaining('sword'));
 });
 
 test('checks if enemy is alive or not', () => {
